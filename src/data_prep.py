@@ -10,6 +10,7 @@ Replica exactamente las decisiones justificadas en notebooks/01 y notebooks/02:
 - Dos conjuntos de features INDEPENDIENTES (regresión vs. clasificación) para
   evitar que el target de una tarea se filtre como feature de la otra.
 """
+import os
 from dataclasses import dataclass
 
 import numpy as np
@@ -17,7 +18,11 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-RAW_PATH = "../data/raw/SeoulBikeData.csv"
+# Relativo a este archivo, no al cwd del proceso: streamlit run (incluido
+# Streamlit Community Cloud) y los notebooks no siempre arrancan con el mismo
+# directorio de trabajo.
+_SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+RAW_PATH = os.path.join(_SRC_DIR, "..", "data", "raw", "SeoulBikeData.csv")
 
 CAT_COLS_REG = ["Seasons", "Holiday", "Franja_Horaria"]
 NUM_COLS_REG = ["Hour", "Temperature", "Humidity", "Wind_speed", "Visibility",
