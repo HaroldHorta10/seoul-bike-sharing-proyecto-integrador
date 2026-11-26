@@ -1,0 +1,10 @@
+.venv/
+.venv-win/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.pyc
+.claude/
+graphify-out/
+CLAUDE.md
+guia_detallada_proyecto_ciencia_datos.pdf
