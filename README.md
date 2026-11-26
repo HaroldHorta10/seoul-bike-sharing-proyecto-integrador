@@ -4,6 +4,8 @@ Universidad de La Salle — Facultad de Ingeniería / Maestría en Inteligencia 
 Asignatura: Ciencia de Datos — Docente: Fabián Camilo Castro Riveros
 Autores: Harold Andrés Horta Suárez, Anderson Alexander González Ruiz
 
+**Dashboard en vivo:** <https://seoul-bike-sharing-proyecto-integrador-mggmav2vzxfegsgx3jfays.streamlit.app>
+
 ## Dataset
 
 **Seoul Bike Sharing Demand** (UCI Machine Learning Repository, id 560, licencia CC BY 4.0).
